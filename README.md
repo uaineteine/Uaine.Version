@@ -1,6 +1,6 @@
-# VersionController
+# Uaine.VersionController
 
-A simple version controller written in c# for .NET core.
+A simple version controller written in c# for .NET 
 
 Adaptable number of signifgant digits, special attribute names and comparisons of version numbers.
 
