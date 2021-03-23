@@ -1,8 +1,7 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.Linq;
 
-namespace VersionController
+namespace Uaine.VersionController
 {
     public class Version
     {
