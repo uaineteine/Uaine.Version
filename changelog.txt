@@ -1,1 +1,4 @@
---1.0.1--
+--1.0.2--
+Changes:
+New namespace name
+.NET standard 1.0 target

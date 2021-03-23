@@ -2,15 +2,19 @@
 
 A simple version controller written in c# for .NET 
 
-Adaptable number of signifgant digits, special attribute names and comparisons of version numbers.
+Adaptable number of signifiant digits, special attribute names and comparisons of version numbers.
 
 ## Getting Started
 
-Compling yourself: Use Visual Studio and the project file to create either a new project to be modified or add to a solution for use as a DLL.
+Get with [NuGet](https://www.nuget.org/packages/Uaine.VersionController/1.0.2)
+
+##### Compling yourself: 
+
+Use Visual Studio and the project file to create either a new project to be modified or add to a solution for use as a DLL.
 
 ### Requires:
 
-This project is target for .NET standard 2.0. It should be compliant with earlier versions of course, however when compiling with VS, one will have to change the project settings.
+This project is target for .NET standard 1.0. It should be compliant with earlier versions of course, however when compiling with VS, one will have to change the project settings.
 
 ### Installing
 
@@ -29,6 +33,12 @@ dotnet publish -c release -r ubuntu.16.04-x64 --self-contained
 ## Authors
 
 * **Daniel Stamer-Squair** - *UaineTeine*
+
+## Donate
+
+If you like my work and are feeling generous, you can leave me tip on ko-fi. Even the smallest donation is more than welcome and will make my day :)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C43PQ0I)
 
 ## License
 
