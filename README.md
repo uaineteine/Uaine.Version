@@ -6,7 +6,7 @@ Adaptable number of signifiant digits, special attribute names and comparisons o
 
 ## Getting Started
 
-Get with [NuGet](https://www.nuget.org/packages/Uaine.VersionController/1.0.2)
+Get with [NuGet](https://www.nuget.org/packages/Uaine.VersionController/1.0.3)
 
 ##### Compling yourself: 
 

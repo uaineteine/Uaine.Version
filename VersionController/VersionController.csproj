@@ -4,16 +4,24 @@
     <TargetFramework>netstandard1.0</TargetFramework>
     <AssemblyName>Uaine.VersionController</AssemblyName>
     <RootNamespace>Uaine.VersionController</RootNamespace>
-    <Version>1.0.2</Version>
-    <Copyright>Copyright 2021 Daniel Stamer-Squair</Copyright>
+    <Version>1.0.3</Version>
+    <Copyright>Copyright 2024 Daniel Stamer-Squair</Copyright>
     <PackageLicenseUrl>https://github.com/uaineteine/Uaine.VersionController/blob/release/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/uaineteine/Uaine.VersionController/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/uaineteine/Uaine.VersionController/</RepositoryUrl>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
     <Authors>Daniel Stamer-Squair</Authors>
     <Company>Daniel Stamer-Squair</Company>
     <Description>A simple version controller written in c# for .NET</Description>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
