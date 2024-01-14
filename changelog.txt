@@ -1,3 +1,9 @@
+--1.0.3--
+Changes:
+Depth and version number now a property
+Icon release
+Version comparison values
+
 --1.0.2--
 Changes:
 New namespace name

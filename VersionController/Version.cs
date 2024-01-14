@@ -5,13 +5,12 @@ namespace Uaine.VersionController
 {
     public class Version
     {
-        int[] versionNo;
-        int depth;
-        string specialAttr = "";
+        public int[] versionNo { get; private set; }
+        public int Depth { get => versionNo.Length; }
+        public string specialAttr { get; private set; }
         bool indev;
         public Version(int[] thisnum, string special, bool devbool)//leave blank if none
         {
-            this.depth = thisnum.Length;
             this.versionNo = thisnum;
             this.specialAttr = special;
             this.indev = devbool;
@@ -31,48 +30,13 @@ namespace Uaine.VersionController
             if (indev)
                 output.Append("InDev ");
             output.Append(toadd);
-            for (int i = 0; i < depth; i++)
+            for (int i = 0; i < Depth; i++)
             {
                 output.Append(versionNo[i].ToString());
-                if (i != depth - 1)
+                if (i != Depth - 1)
                     output.Append(".");
             }
             return output.ToString();
-        }
-        public bool isANewer(Version a)
-        {
-            bool newer = false;
-            Version iteratorVersion = a;
-            if (a.depth < this.depth)//there are more numbers in b
-                iteratorVersion = this;
-
-            for(int i = 0; i < iteratorVersion.depth; i++)
-            {
-                if (a.versionNo[i] > this.versionNo[i])
-                {
-                    newer = true;
-                    break;
-                }
-            }
-            return newer;
-        }
-        //if b > a                                          return 0
-        //if a > b                                          return 1
-        //a and b the same                                  return 2
-        //if not the same 'type' with the special attribute return 3
-        public int compareVersion(Version a)
-        {
-            if (a.specialAttr == this.specialAttr)
-            {
-                if (a.versionNo.SequenceEqual(this.versionNo))
-                    return 2;
-                else if (this.isANewer(a))//a is newer so...
-                    return 1;
-                else
-                    return 0;
-            }
-            else
-                return 3; //not the same type
         }
     }
 }
